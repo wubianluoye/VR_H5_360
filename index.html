@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>three.js css3d - panorama</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            height: 100%;
+            min-height: 100%;
+
+            background-color: #000000;
+            margin: 0;
+            cursor: move;
+            overflow: hidden;
+          -webkit-tap-highlight-color: transparent;
+        }
+        .surface { width: 1026px; height: 1026px; background-size: cover; position: absolute;z-index: 0;}
+        .surface .bg { position: absolute; width: 1026px; height: 1026px; }
+
+        #box{
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+  <div class="quanjing">
+    <div id="surface_0" class="surface">
+        <img class="bg" src="images/posx.jpg" alt="">
+        <!--可以在这添加自定义的东西-->
+        <button class="btn" style="position:absolute;top:20%;left:50%;width:100px;height:40px;background-color:#f60;">click</button>
+          <span style="display:block;position:absolute;top:50%;left:50%;width:100px;height:40px;background-color:#fcc;">this show</span>
+    </div>
+    <div id="surface_1" class="surface">
+        <img class="bg" src="images/negx.jpg" alt="">
+    </div>
+    <div id="surface_2" class="surface">
+      <!--可以在这添加自定义的东西-->
+
+        <img class="bg" src="images/posy.jpg" alt="">
+    </div>
+    <div id="surface_3" class="surface">
+      <!--可以在这添加自定义的东西-->
+        <img class="bg" src="images/negy.jpg" alt="">
+    </div>
+    <div id="surface_4" class="surface">
+      <!--可以在这添加自定义的东西-->
+        <img class="bg" src="images/posz.jpg" alt="">
+    </div>
+    <div id="surface_5" class="surface">
+      <!--可以在这添加自定义的东西-->
+        <img class="bg" src="images/negz.jpg" alt="">
+    </div>
+  </div>
+</div>
+<script src="js/three.min.js"></script>
+<script src="js/CSS3DRenderer.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
