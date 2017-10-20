@@ -14,6 +14,9 @@
     .controlBtn{ width: 60px; height: 60px; position: fixed; z-index: 99999; left: 8%; top: 5%; }
     .controlIcon{ background: url(images/controlIcon.png); background-size: 100% 100%; }
     .controlIconae{ background: url(images/controlIconae.png); background-size: 100% 100%; }
+    .no-flash {
+        -webkit-backface-visibility: hidden;
+    }
     @-webkit-keyframes bounceant1{
         0%{-webkit-transform:translateY(0)}
         50%{-webkit-transform:translateY(-12px)}
@@ -33,24 +36,24 @@
 <div id="pano">
     <!-- 正方体的六个面 -->
     <div id="bg_section_0" class="bg_section bg_section_4 scale_test">
-        <img class="bg" src="images/panorama.right.jpg" alt="">
+        <img class="bg no-flash" src="images/panorama.right.jpg" alt="">
         <div class="btn1 bounceant1"></div> <!-- 可点击按钮1 -->
     </div>
     <div id="bg_section_1" class="bg_section bg_section_5 scale_test">
-        <img class="bg" src="images/panorama.left.jpg" alt="">
+        <img class="bg no-flash" src="images/panorama.left.jpg" alt="">
     </div>
     <div id="bg_section_2" class="bg_section bg_section_2 scale_test">
-        <img class="bg" src="images/panorama.top.jpg" alt="">
+        <img class="bg no-flash" src="images/panorama.top.jpg" alt="">
     </div>
     <div id="bg_section_3" class="bg_section bg_section_3 scale_test">
-        <img class="bg" src="images/panorama.bottom.jpg" alt="">
+        <img class="bg no-flash" src="images/panorama.bottom.jpg" alt="">
     </div>
     <div id="bg_section_4" class="bg_section bg_section_1 scale_test">
-        <img class="bg" src="images/panorama.front.jpg" alt="">
+        <img class="bg no-flash" src="images/panorama.front.jpg" alt="">
         <div class="btn2 bounceant1"></div> <!-- 可点击按钮2 -->
     </div>
     <div id="bg_section_5" class="bg_section bg_section_0 scale_test">
-        <img class="bg" src="images/panorama.back.jpg" alt="">
+        <img class="bg no-flash" src="images/panorama.back.jpg" alt="">
     </div>
 </div>
 
